@@ -23,3 +23,13 @@ This module forms the foundation for future modules involving stochastic volatil
 
 ### Numerical Greeks via Finite Differences
 This introduces a general-purpose finite difference engine to compute numerical estimates of Greeks and validate them against the analytical solutions. Both call and put options are tested, with results showing strong agreement and low absolute error, confirming the accuracy of the model implementation.
+
+## Module 2: Monte Carlo Pricing for European Options
+
+- Implemented Monte Carlo simulation to price European call and put options.
+- Compared standard Monte Carlo with two variance reduction techniques:
+  - Antithetic variates
+  - Control variates (using Black-Scholes formula as control)
+- Computed option prices, standard errors, and 95% confidence intervals.
+- Benchmarked results against analytical Black-Scholes prices.
+- Demonstrated how control variates significantly improve efficiency and accuracy.
