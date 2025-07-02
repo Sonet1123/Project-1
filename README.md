@@ -33,3 +33,12 @@ This introduces a general-purpose finite difference engine to compute numerical 
 - Computed option prices, standard errors, and 95% confidence intervals.
 - Benchmarked results against analytical Black-Scholes prices.
 - Demonstrated how control variates significantly improve efficiency and accuracy.
+
+  ### Monte Carlo Greeks Validation
+
+We compared Monte Carlo estimates of Greeks (Delta, Gamma, Vega, Rho, Theta) with both analytical Black-Scholes values and finite-difference approximations.
+
+- The three methods produced consistent results, validating the Monte Carlo approach.
+- Minor differences, especially in Vega and Gamma, are due to simulation variance but remain within acceptable ranges.
+
+
