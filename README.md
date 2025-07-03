@@ -1,6 +1,15 @@
-# Project 1
+# European Options Pricing: Black-Scholes, Monte Carlo, Local Volatility, Stochastic Volatility
+## Project Structure
 
-## Module 1: Black-Scholes Pricing and Greeks Engine
+| File                          | Description                            |
+|-------------------------------|----------------------------------------|
+| `main.ipynb`                  | Main notebook with pricing and analysis |
+| `functions_Black_Scholes.py`  | Black-Scholes pricing and Greeks       |
+| `functions_Monte_Carlo.py`    | Monte Carlo methods and estimators     |
+| `european_options_pricing.pdf`| Final report with results and visuals  |
+
+
+## Module 1: Black-Scholes Pricing and Greeks 
 
 This module builds an analytical engine for European option pricing under the Black-Scholes framework.
 
@@ -42,7 +51,7 @@ We compared Monte Carlo estimates of Greeks (Delta, Gamma, Vega, Rho, Theta) wit
 - Minor differences, especially in Vega and Gamma, are due to simulation variance but remain within acceptable ranges.
 
 
-## Module 3: Local Volatility Modeling and Monte Carlo Pricing
+## Module 3: Local Volatility Modeling 
 This module extends European option pricing to incorporate non-constant volatility by constructing a synthetic implied volatility surface and computing the corresponding local volatility surface using Dupire’s formula. Simulated asset paths under this local volatility model are used to price European call and put options via Monte Carlo simulation, and compared with standard Monte Carlo and Black-Scholes results.
 
 ## Module 4: Stochastic Volatility Models (Heston & GARCH)
