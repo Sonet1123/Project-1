@@ -44,3 +44,21 @@ We compared Monte Carlo estimates of Greeks (Delta, Gamma, Vega, Rho, Theta) wit
 
 ## Module 3: Local Volatility Modeling and Monte Carlo Pricing
 This module extends European option pricing to incorporate non-constant volatility by constructing a synthetic implied volatility surface and computing the corresponding local volatility surface using Dupire’s formula. Simulated asset paths under this local volatility model are used to price European call and put options via Monte Carlo simulation, and compared with standard Monte Carlo and Black-Scholes results.
+
+## Module 4: Stochastic Volatility Models (Heston & GARCH)
+
+In this module, we implement and analyze two stochastic volatility models for pricing European options:
+
+- **Heston Model**: Captures continuous-time stochastic volatility with mean-reversion.
+- **GARCH(1,1) Model**: Models discrete-time volatility clustering observed in financial time series.
+
+We simulate asset paths under both models and price call and put options using Monte Carlo. The resulting prices are compared with Black-Scholes benchmark prices, and implied volatilities are computed from Heston and GARCH prices for interpretation under the Black-Scholes framework.
+
+Key insight: GARCH tends to produce higher option prices due to persistent high volatility, whereas Heston produces prices close to Black-Scholes but with more realistic volatility behavior.
+
+### Implied Volatility Analysis
+
+We also computed the implied volatilities from the Heston and GARCH prices by inverting the Black-Scholes formula:
+
+- The Heston model demonstrates volatility skew between call and put options.
+- GARCH produces consistently high implied volatility, indicative of its ability to capture fat tails and clustering in volatility.
