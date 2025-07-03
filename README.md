@@ -34,7 +34,7 @@ This introduces a general-purpose finite difference engine to compute numerical 
 - Benchmarked results against analytical Black-Scholes prices.
 - Demonstrated how control variates significantly improve efficiency and accuracy.
 
-  ### Monte Carlo Greeks Validation
+### Monte Carlo Greeks Validation
 
 We compared Monte Carlo estimates of Greeks (Delta, Gamma, Vega, Rho, Theta) with both analytical Black-Scholes values and finite-difference approximations.
 
@@ -42,3 +42,5 @@ We compared Monte Carlo estimates of Greeks (Delta, Gamma, Vega, Rho, Theta) wit
 - Minor differences, especially in Vega and Gamma, are due to simulation variance but remain within acceptable ranges.
 
 
+## Module 3: Local Volatility Modeling and Monte Carlo Pricing
+This module extends European option pricing to incorporate non-constant volatility by constructing a synthetic implied volatility surface and computing the corresponding local volatility surface using Dupire’s formula. Simulated asset paths under this local volatility model are used to price European call and put options via Monte Carlo simulation, and compared with standard Monte Carlo and Black-Scholes results.
